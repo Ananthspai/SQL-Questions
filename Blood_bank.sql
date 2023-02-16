@@ -12,4 +12,5 @@ join (
   select city, sum(amount) as a2
   from acceptor
   group by city
-) as b on a.city = b.city;
+) as b on a.city = b.city
+order by a.city;
